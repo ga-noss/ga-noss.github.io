@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, rgb(0, 255, 0), rgb(0, 100, 0));
+}
+
+div {
+  text-align: center;
+  margin: 100px;
+}
+
+button {
+  margin: 50px;
+}

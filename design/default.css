@@ -1,0 +1,192 @@
+/*Parts*/
+:root {
+	--couleurFond: #1D1D1D;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, sans-serif;
+	background-color: #F4F7F6
+}
+
+header {
+	text-align: center;
+	color: white;
+	background-color: var(--couleurFond);
+}
+
+nav {
+	background-color: white;
+	box-shadow: 0px 3px 1px -1px rgba(0,0,0,0.5); 
+	font-size: 1.1em;
+	padding: 15px;
+	text-align: center;
+}
+
+section {
+	text-align: center;
+	width: 600px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+footer {
+	background-color: var(--couleurFond);
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+
+/*Balise*/
+h1 {
+	font-family: Big Shoulders Display, sans-serif;
+	display: inline;
+	margin-top: 0;
+	padding-top: 30px;
+}
+
+h2 {
+	font-family: Open Sans, sans-serif;
+	font-size: 1.5em;
+	margin: auto;
+	width: 600px;
+}
+
+h3 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+h3:before {
+	content: '« ';
+	color: grey;
+}
+
+h3:after {
+	content: ' »';
+	color: grey;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+b {
+	font-weight: bold;
+}
+
+ul {
+	padding: 0;
+	margin-top: 0;
+	text-align: center;
+	display: inline;
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+	font-size: 1.3em;
+	padding: 15px;
+}
+
+li:hover {
+	font-weight: bold;
+}
+
+/*Id et class*/
+
+#logo {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	width: 65px;
+}
+
+#contact {
+	border: 1px black solid;
+	border-radius: 15px;
+	padding: 30px;
+	margin-bottom: 50px;
+}
+
+.separator {
+	width: 40px;
+	height: 1px;
+	margin: 15px auto;
+	display: block;
+	background-color: #999999;
+}
+
+#projets {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#picture-project  img {
+	width: 90%;
+	margin: 50px;
+}
+
+.projet {
+	width: 400px;
+	margin: 30px auto;
+	display: inline-block;
+	background-color: white;
+	padding-bottom: 15px;
+	border: 0px black solid;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+}
+
+.projet:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transition: 0.3s;
+}
+
+.projet img {
+	min-width: 100%;
+	height: 100%;
+}
+
+.projet .date-project {
+	font-size: 0.7em;
+}
+
+.projet span {
+	display: block;
+	font-size: 17px; 
+}
+
+.picture {
+	width: 400px;
+	height: 266px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+#picture-project img, #picture-project video {
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+
+
+/* FONTS */
+@font-face {
+	font-family: 'theblacklist';
+	src: url('../src/theblacklist.ttf') format('true-type');
+}
+
+/* SCREEN */
+@media all and (max-width: 1000px) {
+	 .projet { width: 80%; margin: 15px 0px;}
+	 .projet img { width: 100%; min-width: auto; height: auto;}
+	 .projet .picture { width: 100%; height: auto; }
+	 header h2 { width: 90%;}
+	 section { width: 75vw; }
+}

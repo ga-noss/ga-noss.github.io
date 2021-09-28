@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+ <html>
+	<head>
+ 		<meta charset="utf-8" />
+ 		<title>Lucas Gangnard-Ross | Programmeur Intermediaire</title>
+ 		<link rel="icon" type="image/png" href="pictures/favicon.png">
+ 		<link rel="stylesheet" type="text/css" href="design/default.css">
+ 		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&family=Open+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width" />
+ 	</head>
+
+	<body>
+		<header>	
+			<h1>Lucas Gangnard-Ross</h1>
+
+			<span class="separator"></span>
+
+	 		<h2>Développeur Intermediaire en HTML5, CSS3 et  débutant en Javascript</h2>
+
+	 		<div>
+	 			<img src="pictures/logo.png" alt="logo" title="logo"  id="logo" />
+	    	</div>
+	    </header>
+
+	    <nav>
+	    	<ul>
+	    		<li><a href="index.html" title="Accueil">Accueil</a></li>
+	    		<li><a href="#projets" title="Projets">Projets</a></li>
+	    		<li><a href="#contact" title="Contact">Contact</a></li>	
+	     	</ul>
+	    </nav>
+
+
+	    <div class="contener">
+			<section> 	
+				<h3>Bienvenue</h3>
+
+			<!-- <em>= peu importants/ <strong>= importants-->
+	 			<p>J'ai deja un peu de niveau mais je pense que je peut m'ameliorer. Je maitrise le HTML5 et le CSS3, je vais debuter en PHP et en Javascript.</p>
+	    	</section>
+
+	    	<section>
+	    		<h3>Projets</h3>
+
+	    		<div id="projets">
+	    			<div class="projet">
+	    				<a href="projet1.html">
+	    					<div class="picture">
+	    						<img src="pictures/illustration_1.png" style="height: auto; width: 50%;" alt="projet1">
+	    					</div>
+	    					<span>Ce Portfolio</span>
+	    					<span class="date-project">06/03/2021</span>
+	    				</a>
+	    			</div>
+
+	    			<!-- <div class="projet">
+	    				<a href="projet2.html">
+	    					<div class="picture">
+	    						<img src="pictures/illustration_2.jpg" alt="projet2">
+	    					</div>
+	    					<span>Deuxième Projet</span>
+	    					<span class="date-project">08/02/2021</span>
+	    				</a>
+	    			</div>
+
+	    			<div class="projet">
+	    				<a href="projet3.html">
+	    					<div class="picture">
+	    						<img src="pictures/illustration_3.jpg" alt="projet3">
+	    					</div>
+	    					<span>Troisième Projet</span>
+	    					<span class="date-project">08/02/2021</span>
+	    				</a>
+	    			</div>
+
+	    			<div class="projet">
+	    				<a href="projet4.html">
+	    					<div class="picture">
+	    						<img src="pictures/illustration_4.jpg" alt="projet4">
+	    					</div>
+	    					<span>Quatrième Projet</span>
+	    					<span class="date-project">08/02/2021</span>
+	    				</a>
+	    			</div>
+
+	    			<div class="projet">
+	    				<a href="projet5.html">
+	    					<div class="picture">
+	    						<img src="pictures/illustration_5.jpg" alt="projet5">
+	    					</div>
+	    					<span>Cinquième Projet</span>
+	    					<span class="date-project">08/02/2021</span>
+	    				</a>
+	    			</div>
+
+	    			<div class="projet">
+	    				<a href="projet6.html">
+	    					<div class="picture">
+	    						<img src="pictures/illustration_6.jpg" alt="projet6">
+	    					</div>
+	    					<span>Sixième Projet</span>
+	    					<span class="date-project">08/02/2021</span>
+	    				</a>
+	    			</div> -->
+	    		</div>
+
+	    		
+	    	</section>
+
+	    	<section>
+	    		<h3>Contact</h3>
+
+	    		<div id="contact">
+					<p>Si <a id="cacher" style='cursor:help;'>vous</a> voulez me contacter, n'hésitez pas à m'envoyer un email à <a href="mailto:lgr2612@gmail.com"><b>lgr2612@gmail.com</b></a></p>
+				</div>
+				<script>
+					let hided = document.querySelector('#cacher');
+					hided.addEventListener('click', function() {
+						let hided = document.querySelector('#cacher');
+						let code = prompt('Please enter the code');
+
+						if (code === '2612') {
+							location.href = 'Hidden/hidden.html';
+						} else {
+							location.reload();
+						}
+					})
+				</script>
+	   		 </section>
+		</div>
+
+	    <footer>	
+	    	<span>2021 &copy; Lucas Gangnard</span>
+	    </footer>
+	 </body>
+</html>	
