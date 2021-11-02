@@ -10,10 +10,14 @@ if(localStorage.getItem('todo')) {
 submit.addEventListener('click', () => {
     let todo = input.value;
 
-    list.innerHTML += '<li><h3>'+ todo +'</h3></li>';
-    input.value="";
+    if(todo === '') {
+        alert('Please enter a valid todo')
+    } else {
+        list.innerHTML += '<li><h3>'+ todo +'</h3></li>';
+        input.value="";
 
-    localStorage.setItem('todo', list.innerHTML);
+        localStorage.setItem('todo', list.innerHTML);
+    }
 });
 
 clear.addEventListener('click', () => {

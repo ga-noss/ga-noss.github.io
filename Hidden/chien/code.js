@@ -1,7 +1,6 @@
 let btn = document.querySelector('button');
 
 btn.addEventListener('click', () => {
-
     const url = 'https://dog.ceo/api/breeds/image/random';
 
     let request = new XMLHttpRequest();
