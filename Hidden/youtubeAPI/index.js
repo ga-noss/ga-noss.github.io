@@ -5,7 +5,9 @@ var input       = $('input');
 var title       = $('#title');
 var date        = $('#date');
 var type        = $('#type');
+var img         = $('#img');
 var thumbnail   = $('#thumbnail');
+var content     = $('#content');
 
 submit.click(() => {
 
@@ -21,6 +23,8 @@ submit.click(() => {
             url: url,
             dataType: "json",
             success: function (response) {
+                input.val('');
+
                 title.html(response.items[0].snippet.title)
                 date.html(response.items[0].snippet.publishedAt)
 
@@ -30,7 +34,9 @@ submit.click(() => {
                 if(response.items[0].id.kind == 'youtube#channel') {
                     type.html('channel');
                     channel.removeClass('d-none');
-                    video.addClass('d-none');        
+                    video.addClass('d-none');
+                    img.removeClass('d-xxl-inline-block');
+                    co     
                 } else {
                     type.html('video');
                     video.removeClass('d-none');
