@@ -2,7 +2,7 @@
  <html>
 	<head>
  		<meta charset="utf-8" />
- 		<title>Lucas Gangnard-Ross | Programmeur Intermediaire</title>
+ 		<title>Lucas Gangnard-Ross | Programmeur Front End</title>
  		<link rel="icon" type="image/png" href="pictures/favicon.png">
  		<link rel="stylesheet" type="text/css" href="design/default.css">
  		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,7 +16,7 @@
 
 			<span class="separator"></span>
 
-	 		<h2>Développeur Intermediaire en HTML5, CSS3 et  débutant en Javascript</h2>
+	 		<h2>Développeur Front End donc HTML5, CSS3 et Javascript</h2>
 
 	 		<div>
 	 			<img src="pictures/logo.png" alt="logo" title="logo"  id="logo" />
@@ -37,7 +37,7 @@
 				<h3>Bienvenue</h3>
 
 			<!-- <em>= peu importants/ <strong>= importants-->
-	 			<p>J'ai deja un peu de niveau mais je pense que je peut m'ameliorer. Je maitrise le HTML5 et le CSS3, je vais debuter en PHP et en Javascript.</p>
+	 			<p>Je suis assez bon en HTML mais en CSS je ne connais pas les manieres avancés. En javascript, je maitrise le vanilla et React.</p>
 	    	</section>
 
 	    	<section>
@@ -47,7 +47,7 @@
 	    			<div class="projet">
 	    				<a href="projet1.html">
 	    					<div class="picture">
-	    						<img src="pictures/illustration_1.png" style="height: auto; width: 50%;" alt="projet1">
+	    						<img src="pictures/illustration_1-1.png" style="height: auto; width: 50%;" alt="projet1">
 	    					</div>
 	    					<span>Ce Portfolio</span>
 	    					<span class="date-project">06/03/2021</span>
@@ -112,26 +112,15 @@
 	    		<h3>Contact</h3>
 
 	    		<div id="contact">
-					<p>Si <a id="cacher" style='cursor:help;'>vous</a> voulez me contacter, n'hésitez pas à m'envoyer un email à <a href="mailto:lgr2612@gmail.com"><b>lgr2612@gmail.com</b></a></p>
+					<p>Si <a id="cacher" style='cursor:help;color: #6F0000;'>vous</a> voulez me contacter, n'hésitez pas à m'envoyer un email à <a href="mailto:lgr2612@gmail.com"><b>lgr2612@gmail.com</b></a></p>
 				</div>
-				<script>
-					let hided = document.querySelector('#cacher');
-					hided.addEventListener('click', function() {
-						let hided = document.querySelector('#cacher');
-						let code = prompt('Please enter the code');
-
-						if (code === '2612') {
-							location.href = 'Hidden/hidden.html';
-						} else {
-							location.reload();
-						}
-					})
-				</script>
 	   		 </section>
 		</div>
 
 	    <footer>	
-	    	<span>2021 &copy; Lucas Gangnard</span>
+	    	<span><span id="footerDate">2021</span> &copy; Lucas Gangnard</span>
 	    </footer>
+
+		<script src="./index.js"></script>
 	 </body>
 </html>	
