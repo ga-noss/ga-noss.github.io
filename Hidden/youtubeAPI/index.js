@@ -8,8 +8,10 @@ var type        = $('#type');
 var img         = $('#img');
 var thumbnail   = $('#thumbnail');
 var content     = $('#content');
+var form        = $('#form');
 
-submit.click(() => {
+form.submit((e) => {
+    e.preventDefault();
 
     var search = input.val();
 
