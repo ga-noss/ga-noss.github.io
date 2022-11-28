@@ -1,4 +1,3 @@
-let input = document.querySelector('input');
 let submit = document.getElementById('submit');
 let clear = document.getElementById('clear');
 let list = document.querySelector('ul');
@@ -7,21 +6,18 @@ if(localStorage.getItem('todo')) {
     list.innerHTML += localStorage.getItem('todo');   
 }
 
-submit.addEventListener('click', () => {
-    let todo = input.value;
+submit.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-    if(todo === '') {
-        alert('Please enter a valid todo')
-    } else {
-        list.innerHTML += '<li><h3>'+ todo +'</h3></li>';
-        input.value="";
+    let todo = submit.input.value;
 
-        localStorage.setItem('todo', list.innerHTML);
-    }
+    list.innerHTML += '<li><h3>'+ todo +'</h3></li>';
+    submit.reset();
+
+    localStorage.setItem('todo', list.innerHTML);
 });
 
 clear.addEventListener('click', () => {
     localStorage.clear();
     list.innerHTML = '';
 });
-

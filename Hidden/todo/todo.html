@@ -10,7 +10,7 @@
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-6">
-                <div class="border" style="height: 500px">
+                <div class="border rounded-3 todo" style="height: 500px; overflow: auto;">
                     <ul>
                         
                     </ul>
@@ -18,17 +18,17 @@
             </div>
     
             <div class="col-6">
-                <form id="form">
+                <form id="submit">
                     <label for="todo" class="form-label">Enter your todo :</label>
-                    <input type="text" id="todo" class="form-control" style="width:500px">
-                    <button class="btn btn-secondary my-3" type="submit" id="submit">Add to the To Do</button>
+                    <input type="text" id="todo" class="form-control" style="width:500px" name="input">
+                    <button class="btn btn-secondary my-3" type="submit">Add to the To Do</button>
                     <button class="btn btn-secondary my-3 ms-3" type="button" id="clear">Clear the To Do</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <footer class="bg-secondary text-center p-5">
+    <footer class="bg-secondary text-center p-5 fixed-bottom">
         <p class="lead">Made By <b>Ganoss</b></p>
     </footer>
 
